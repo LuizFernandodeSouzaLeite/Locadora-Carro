@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listagem de Veículos · Locadora</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-body-tertiary min-vh-100">
+
+  <!-- Navbar -->
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Locadora</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="listagem-clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Veículos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo -->
+  <div class="container" style="padding-top: 80px;">
+    <main>
+
+      <div class="py-4 d-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="h2">Listagem de Veículos</h1>
+          <p class="lead mb-0">Todos os veículos cadastrados no sistema.</p>
+        </div>
+        <a href="cadastro-veiculos.html" class="btn btn-primary">+ Novo Veículo</a>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Modelo</th>
+              <th>Marca</th>
+              <th>Ano</th>
+              <th>Placa</th>
+              <th>Diária (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaVeiculos">
+            <tr id="semVeiculos">
+              <td colspan="6" class="text-center text-muted">Nenhum veículo cadastrado.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const veiculos = JSON.parse(localStorage.getItem('veiculos') || '[]');
+    const tbody = document.getElementById('tabelaVeiculos');
+    const semVeiculos = document.getElementById('semVeiculos');
+
+    if (veiculos.length > 0) {
+      semVeiculos.remove();
+
+      veiculos.forEach(function (veiculo, index) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${index + 1}</td>
+          <td>${veiculo.modelo}</td>
+          <td>${veiculo.marca}</td>
+          <td>${veiculo.ano}</td>
+          <td>${veiculo.placa}</td>
+          <td>R$ ${parseFloat(veiculo.diaria).toFixed(2)}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+  </script>
+
+</body>
+</html>
