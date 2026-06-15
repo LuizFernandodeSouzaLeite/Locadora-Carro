@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="auto">
+<html lang="pt-br" data-bs-theme="auto">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <title>Carousel Template · Bootstrap v5.3</title>
+  <title>Sistema de Locadora · Bootstrap v5.3</title>
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -35,7 +35,7 @@
     </symbol>
   </svg>
 
-  <!-- Theme Toggle -->
+  <!-- Alternador de Tema -->
   <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
     <button
       class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
@@ -43,32 +43,32 @@
       type="button"
       aria-expanded="false"
       data-bs-toggle="dropdown"
-      aria-label="Toggle theme (auto)"
+      aria-label="Alternar tema (automático)"
     >
       <svg class="bi my-1 theme-icon-active" aria-hidden="true">
         <use href="#circle-half"></use>
       </svg>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      <span class="visually-hidden" id="bd-theme-text">Alternar tema</span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
           <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
-          Light
+          Claro
           <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
           <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
-          Dark
+          Escuro
           <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
         </button>
       </li>
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
           <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
-          Auto
+          Automático
           <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
         </button>
       </li>
@@ -79,7 +79,7 @@
   <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Carousel</a>
+        <a class="navbar-brand" href="#">Locadora</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -87,32 +87,32 @@
           data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Alternar navegação"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Clientes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">Veículos</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Main Content -->
+  <!-- Conteúdo Principal -->
   <main>
 
     <!-- Carousel -->
@@ -131,9 +131,9 @@
           </svg>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              <h1>Alugue seu veículo ideal.</h1>
+              <p class="opacity-75">Encontre o carro perfeito para cada ocasião com praticidade e segurança.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Cadastre-se</a></p>
             </div>
           </div>
         </div>
@@ -144,9 +144,9 @@
           </svg>
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Some representative placeholder content for the second slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <h1>Frota variada e moderna.</h1>
+              <p>Temos veículos para todos os perfis, desde econômicos até SUVs de luxo.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
             </div>
           </div>
         </div>
@@ -157,9 +157,9 @@
           </svg>
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>One more for good measure.</h1>
-              <p>Some representative placeholder content for the third slide of this carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              <h1>Simples, rápido e seguro.</h1>
+              <p>Faça sua reserva em minutos e retire o veículo onde preferir.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Ver veículos</a></p>
             </div>
           </div>
         </div>
@@ -168,15 +168,15 @@
 
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Anterior</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Próximo</span>
       </button>
     </div>
 
-    <!-- Marketing / Cards -->
+    <!-- Cards -->
     <div class="container marketing">
 
       <div class="row">
@@ -186,9 +186,9 @@
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
           </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <h2 class="fw-normal">Clientes</h2>
+          <p>Gerencie seus clientes de forma simples e organizada, com cadastro completo e histórico de locações.</p>
+          <p><a class="btn btn-secondary" href="#">Ver detalhes &raquo;</a></p>
         </div>
 
         <div class="col-lg-4">
@@ -196,9 +196,9 @@
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
           </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <h2 class="fw-normal">Veículos</h2>
+          <p>Cadastre e controle toda a frota disponível, com informações detalhadas de cada veículo.</p>
+          <p><a class="btn btn-secondary" href="#">Ver detalhes &raquo;</a></p>
         </div>
 
         <div class="col-lg-4">
@@ -206,23 +206,23 @@
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
           </svg>
-          <h2 class="fw-normal">Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <h2 class="fw-normal">Locações</h2>
+          <p>Acompanhe todas as locações em andamento e o histórico completo de reservas realizadas.</p>
+          <p><a class="btn btn-secondary" href="#">Ver detalhes &raquo;</a></p>
         </div>
 
       </div>
 
-      <!-- Featurettes -->
+      <!-- Destaques -->
       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">
-            First featurette heading.
-            <span class="text-body-secondary">It'll blow your mind.</span>
+            Gestão completa da sua locadora.
+            <span class="text-body-secondary">Tudo em um só lugar.</span>
           </h2>
-          <p class="lead">Some great placeholder content for the first featurette here.</p>
+          <p class="lead">Controle clientes, veículos e locações com uma interface moderna e fácil de usar.</p>
         </div>
         <div class="col-md-5">
           <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
@@ -238,10 +238,10 @@
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading fw-normal lh-1">
-            Oh yeah, it's that good.
-            <span class="text-body-secondary">See for yourself.</span>
+            Frota sempre atualizada.
+            <span class="text-body-secondary">Sem surpresas.</span>
           </h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here.</p>
+          <p class="lead">Cadastre novos veículos, defina valores de diária e acompanhe a disponibilidade em tempo real.</p>
         </div>
         <div class="col-md-5 order-md-1">
           <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
@@ -257,10 +257,10 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">
-            And lastly, this one.
-            <span class="text-body-secondary">Checkmate.</span>
+            Relatórios e listagens completas.
+            <span class="text-body-secondary">Decisões mais inteligentes.</span>
           </h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content.</p>
+          <p class="lead">Visualize todos os dados do sistema em tabelas organizadas e de fácil leitura.</p>
         </div>
         <div class="col-md-5">
           <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
@@ -275,10 +275,10 @@
 
     </div><!-- /.container -->
 
-    <!-- Footer -->
+    <!-- Rodapé -->
     <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2025 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <p class="float-end"><a href="#">Voltar ao topo</a></p>
+      <p>&copy; 2024–2025 Locadora, Inc. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
     </footer>
 
   </main>
