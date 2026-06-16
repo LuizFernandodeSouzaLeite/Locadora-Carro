@@ -1,69 +1,46 @@
-/* ESTILOS GLOBAIS
--------------------------------------------------- */
-/* Espaçamento abaixo do rodapé e cor de texto mais suave */
-
+/* ESTILOS GLOBAIS */
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: rgb(var(--bs-tertiary-color-rgb));
 }
 
-
-/* PERSONALIZAÇÃO DO CAROUSEL
--------------------------------------------------- */
-
-/* Classe base do carousel */
+/* CAROUSEL */
 .carousel {
   margin-bottom: 4rem;
 }
-/* Como a imagem é posicionada, precisamos ajudar a legenda */
+
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
-/* Define alturas por causa do posicionamento do elemento img */
 .carousel-item {
   height: 700px;
 }
 
-
-/* CONTEÚDO DE MARKETING
--------------------------------------------------- */
-
-/* Centraliza o texto nas três colunas abaixo do carousel */
+/* MARKETING */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-/* rtl:begin:ignore */
+
 .marketing .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-/* rtl:end:ignore */
 
-
-/* Destaques
-------------------------- */
-
+/* DESTAQUES */
 .featurette-divider {
-  margin: 5rem 0; /* Mais espaço ao redor do <hr> do Bootstrap */
+  margin: 5rem 0;
 }
 
-/* Afina os títulos de marketing */
-/* rtl:begin:remove */
 .featurette-heading {
   letter-spacing: -.05rem;
 }
 
-/* rtl:end:remove */
-
-/* CSS RESPONSIVO
--------------------------------------------------- */
-
+/* RESPONSIVO */
 @media (min-width: 40em) {
-  /* Aumenta o tamanho do conteúdo do carousel */
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
